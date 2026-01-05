@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgba(255, 255, 0, 0.36);
+}
+body main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .container {
+  background-color: white;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 3px solid black;
+  position: relative;
+  cursor: pointer;
+}
+body main .container .keys {
+  height: 99.7%;
+  width: 10%;
+  background-color: white;
+  border-bottom: 8px solid gray;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+body main .container .keys p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+body main .container .boldkeys {
+  position: absolute;
+  height: 50%;
+  width: 97%;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  gap: 10px;
+  margin-left: 35px;
+  z-index: 99;
+}
+body main .container .boldkeys .boldkey {
+  height: 100%;
+  width: 65px;
+  background-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body main .container .boldkeys #four {
+  margin-left: 70px;
+}
+body main .container .boldkeys #seven {
+  margin-left: 70px;
+}
+body main .container .boldkeys #ten {
+  margin-left: 70px;
+}
+body main .container .boldkeys #thirteen {
+  margin-left: 70px;
+}
+body main .container .boldkeys #sixteen {
+  margin-left: 60px;
+}
+
+.pressed {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+.press {
+  transform: translateY(9px);
+  transition: transform 0.1s;
+}
+
+.keys .pressed {
+  background-color: #bbb;
+}
+
+.boldkey .pressed {
+  background-color: #222;
+}/*# sourceMappingURL=style.css.map */
